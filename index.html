@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="specail.css">
+</head>
+<body class="dark:bg-slate-900 bg-white dark:text-white text-black backdrop-blur-lg">
+    <nav class="justify-between items-center flex p-6 bg-transparent">
+        <div class="flex justify-center items-center space-x-2">
+            <img src="https://s-softteam.com/wp-content/uploads/2023/07/Tailwind-CSS.svg" class="min-w-5 max-w-10">
+            <h1 class="text-2xl font-bold cursor-default">tailwindcss</h1>
+        </div>
+            <div class="flex items-center">
+                <div class="sm:hidden items-center">
+                    <button onclick="nav()" id="dropdownDefaultButton" class="transition-all duration-300 hover:text-gray-500 w-10 h-10">
+                        <i class="fa fas fa-bars fa-1x"></i>
+                    </button>
+                </div>
+                <div class="hidden sm:flex items-center">
+                    <div class="flex items-center space-x-4 text-xl font-semibold">
+                        <a href="#" class="transition-all duration-200 hover:text-blue-400">Home</a>
+                        <a href="#" class="transition-all duration-200 hover:text-blue-400">Features</a>
+                        <a href="#" class="transition-all duration-200 hover:text-blue-400">Components</a>
+                        <a href="#" class="transition-all duration-200 hover:text-blue-400">Installation</a>
+                    </div>
+                </div>
+            </div>
+    </nav>
+
+    <div class="relative w-screen h-screen mx-auto pt-20 sm:pt-24 lg:pt-32">
+        <div class="items-center flex flex-col pr-2">
+            <div>
+                <div class="flex space-x-3 text-center">
+                    <img src="https://s-softteam.com/wp-content/uploads/2023/07/Tailwind-CSS.svg" alt="" class="min-w-14 max-w-24">
+                    <h1 class="items-center justify-center flex text-6xl font-bold">Tailwindcss</h1>
+                </div>
+            </div>
+            <p class="text-[1.2rem] font-semibold pl-5">A <mark class="bg-transparent font-bold text-blue-600 bg-">fast</mark>, <mark class="bg-transparent font-bold text-blue-600 bg-">flexible</mark> way to write your <mark class="bg-transparent font-bold text-blue-600 bg-">CSS code</mark> in a html file</p>
+        </div>
+    </div>
+    <div class=" items-center justify-center w-full h-full space-y-4 p-8 mb-48">
+        <div class="text-5xl font-bold justify-center mx-auto max-w-3xl text-center items-center">
+            Doesn't need to learn new tool, just CSS but<mark class="text-[0.3rem] bg-transparent text-gray-600 font-bold space-x-0 ">so much</mark>shorter.
+        </div>
+        <p class="text-lg text-gray-400 text-center mx-auto max-w-3xl justify-center font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quibusdam mollitia consequatur nisi sint? Aliquam dolorem soluta non eos, earum fugit cum rerum. Ipsam quas possimus minima dolorem assumenda suscipit.</p>
+    </div>
+
+    <div class="flex justify-center items-center w-3xl mb-12">
+        <div class="w-[50rem]">
+            <div class="flex-none h-8 border-b-0 border-slate-600 border-2 rounded-t-lg">
+                <div class="flex float-right items-center gap-[0.6rem] pr-1 pt-2">
+                    <div class="w-3 h-3 rounded-full bg-slate-600"></div>
+                    <div class="w-3 h-3 rounded-full bg-slate-600"></div>
+                    <div class="w-3 h-3 rounded-full bg-slate-600"></div>
+                </div>
+            </div>
+            <div class=" rounded-b-lg flex border-2 border-slate-600">
+                <div class="font-mono text-gray-500 pl-4 border-r-2 pr-2 cursor-default border-slate-600">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                </div>
+                <ul>
+                    <li><code id="div1" class="text-blue-400"></code></li>
+                    <li class="ml-6"><code id="content1" class="text-white"></code></li>
+                    <li><code id="divend1" class="text-blue-400"></code></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex justify-center items-center w-3xl">
+        <div class="w-[50rem]">
+            <div class="flex-none h-8 border-b-0 border-slate-600 border-2 rounded-t-lg">
+                <div class="flex float-right items-center gap-[0.6rem] pr-1 pt-2">
+                    <div class="w-3 h-3 rounded-full bg-slate-600"></div>
+                    <div class="w-3 h-3 rounded-full bg-slate-600"></div>
+                    <div class="w-3 h-3 rounded-full bg-slate-600"></div>
+                </div>
+            </div>
+            <div class="pb-52 font-bold text-blue-400 text-3xl bg-white rounded-b-lg flex border-2 border-slate-600">
+                    Hello
+            </div>
+        </div>
+    </div>
+
+    <div id="hidden">
+        <div id="nav" class="hidden">
+            <div class="absolute">
+                <div class="fixed">
+                    <div class="fixed -top-1 -left-1 w-screen h-screen backdrop-blur-[7px]">.</div>
+                    <div class="fixed top-4 right-4">
+                        <div class="w-auto h-auto bg-slate-800 rounded-lg shadow-lg">
+                            <button onclick="closeNav()" class="text-[0.9rem] font-extrabold float-right pr-4 pt-4 transition-all duration-200 hover:text-gray-400 cursor-pointer"><i class="fa fas fa-x fa-lg"></i></button>
+                            <ul class="p-10 space-y-4  pt font-bold text-xl">
+                                <li><a href="#" class="transition-all duration-200 hover:text-gray-400">Home</a></li>
+                                <li><a href="#" class="transition-all duration-200 hover:text-gray-400">Features</a></li>
+                                <li><a href="#" class="transition-all duration-200 hover:text-gray-400">Components</a></li>
+                                <li><a href="#" class="transition-all duration-200 hover:text-gray-400">Installation</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="pt-40">
+        <div class="sm:flex space-x-4 space-y-2 pb-8  md:justify-center md:items-center">
+            <div class="font-bold pl-4 sm:pl-2 md:pl-6">
+                Getting started
+                <ul class="text-gray-400">
+                    <li><a href="#" class="hover:text-white">Installation</a></li>
+                    <li><a href="#" class="hover:text-white">Editor Setup</a></li>
+                    <li><a href="#" class="hover:text-white">Using with Preprocessors</a></li>
+                    <li><a href="#" class="hover:text-white">Optimizing for Production</a></li>
+                    <li><a href="#" class="hover:text-white">Browser Support</a></li>
+                    <li><a href="#" class="hover:text-white">Upgrade Guide</a></li>
+                </ul>
+            </div>
+            <div class="font-bold">
+                Core Concepts
+                <ul class="text-gray-400 text-[0.9rem]">
+                    <li><a href="#" class="hover:text-white">Utility-First Fundamentals</a></li>
+                    <li><a href="#" class="hover:text-white">Handling Hover, Focus, and Other States</a></li>
+                    <li><a href="#" class="hover:text-white">Responsive Design</a></li>
+                    <li><a href="#" class="hover:text-white">Dark Mode</a></li>
+                    <li><a href="#" class="hover:text-white">Reusing Styles</a></li>
+                    <li><a href="#" class="hover:text-white">Adding Custom Styles</a></li>
+                    <li><a href="#" class="hover:text-white">Functions & Directives</a></li>
+                </ul>
+            </div>
+            <div class="font-bold">
+                Customization
+                <ul class="text-gray-400">
+                    <li><a href="#" class="hover:text-white">Configuration</a></li>
+                    <li><a href="#" class="hover:text-white">Content Configuration</a></li>
+                    <li><a href="#" class="hover:text-white">Theme Configuration</a></li>
+                    <li><a href="#" class="hover:text-white">Customizing Screens</a></li>
+                    <li><a href="#" class="hover:text-white">Customizing Colors</a></li>
+                    <li><a href="#" class="hover:text-white">Customizing Spacing</a></li>
+                    <li><a href="#" class="hover:text-white">Plugins</a></li>
+                    <li><a href="#" class="hover:text-white">Presets</a></li>
+                </ul>
+            </div>
+            <div class="font-bold">
+                Community
+                <ul class="text-gray-400">
+                    <li><i></i><a href="#" class="hover:text-white">GitHub</a></li>
+                    <li><i></i><a href="#" class="hover:text-white">Discord</a></li>
+                    <li><i></i><a href="#" class="hover:text-white">Twitter</a></li>
+                    <li><i></i><a href="#" class="hover:text-white">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex border-t-2 border-slate-500 pt-4 pb-8 max-w-7xl ml-4 mr-4 sm:ml-6 sm:mr-6 md:ml-8 md:mr-8">
+            <div class="flex justify-center items-center space-x-2">
+                <img src="https://s-softteam.com/wp-content/uploads/2023/07/Tailwind-CSS.svg" class="min-w-5 max-w-10">
+                <h1 class="text-3xl font-bold cursor-default">tailwindcss</h1>
+            </div>
+        </div>
+    </footer>
+    <div class="flex justify-center items-center pt-16 pb-16 text-2xl">I don't have anymore idea</div>
+    <script src="main.js">
+    </script>    
+    <script src="https://kit.fontawesome.com/f46bf5c15b.js" crossorigin="anonymous"></script>
+</body>
+</html>
